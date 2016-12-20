@@ -1,0 +1,38 @@
+﻿<Application x:Class="sudoku_game.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:sudoku_game"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <Style x:Key="MainScreenPanel" TargetType="Panel">
+             <Setter Property="Background">
+                 <Setter.Value>
+                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#4ed1e5" Offset="0"/>
+                         <GradientStop Color="Blue" Offset="1"/>
+                    </LinearGradientBrush>
+                 </Setter.Value>
+             </Setter>
+         </Style>
+        <Style x:Key="SidePanel" TargetType="Panel">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#2ec17f" Offset="0"/>
+                        <GradientStop Color="#254c3a" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="MainField" TargetType="Grid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="LightSlateGray" Offset="0"/>
+                        <GradientStop Color="DarkGray" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
